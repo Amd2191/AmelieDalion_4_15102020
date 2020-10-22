@@ -93,6 +93,7 @@ a:hover {
 .texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
+    opacity: 0.5;
 }
 
 .b-parallax {
@@ -122,10 +123,6 @@ a:hover {
 .d-bloc .a-btn,
 .d-bloc .navbar a,
 .d-bloc .navbar-brand,
-.d-bloc a .icon-sm,
-.d-bloc a .icon-md,
-.d-bloc a .icon-lg,
-.d-bloc a .icon-xl,
 .d-bloc h1 a,
 .d-bloc h2 a,
 .d-bloc h3 a,
@@ -275,7 +272,10 @@ a:hover {
 .row-no-gutters {
     margin-right: 0;
     margin-left: 0;
+    display: flex;
+    justify-content: space-between;
 }
+
 
 .row.row-no-gutters > [class^="col-"],
 .row.row-no-gutters > [class*=" col-"] {
@@ -504,7 +504,14 @@ button {
 .panel-rd .panel-footer {
     border-radius: 0 0 29px 29px;
 }
-
+footer h4{
+    padding-top: 45px;
+}
+footer ul{
+list-style: none;
+text-align: center;
+padding-inline-start: 0;
+}
 .form-control {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
@@ -526,7 +533,7 @@ button {
 }
 
 .showScrollTop {
-    font-size: 14px;
+    font-size: 16px;
     opacity: 1;
 }
 
@@ -673,16 +680,16 @@ a {
     text-align: center;
     font-weight: lighter;
     max-width: 520px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 p {
-    font-size: 11px;
+    font-size: 16px;
 }
 
 .tight-width-whitespace {
     max-width: 600px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 .h1 {
@@ -692,16 +699,19 @@ p {
 
 .cta-hero {
     margin-top: 22px;
-    color: #FFFFFF!important;
+    color: #f3976c!important;
+    background-color: #303030;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
     font-weight: 700;
 }
-
+.cta-hero:hover{
+background-color: black;
+}
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 h2 {
@@ -710,15 +720,16 @@ h2 {
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 16px;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
+    letter-spacing: 0.1em;
 }
 
 .med-width-whitespace {
     max-width: 800px;
-    margin: auto auto auto auto;
+    margin: auto;
     box-shadow: 0px 0px 0px #000000;
 }
 
@@ -728,6 +739,16 @@ h1 {
 
 h4 {
     color: #333333!important;
+    font-size: 25px;
+}
+h5{
+    font-size: 25px;
+    font-style: italic;
+}
+h6{
+    font-size: 20px;
+    padding-top: 40px;
+    color: #000000 !important;
 }
 
 .icons {
@@ -753,7 +774,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: #303030;
     padding: 40px 40px 40px 40px;
 }
 
@@ -770,22 +791,20 @@ h4 {
     background-color: #364577;
 }
 
+.bgc-atomic-grey {
+    background-color: #303030;
+    color: #F3976C!important;
+}
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #F3976c;
+    color: #303030!important;
 }
 
 .tc-white {
-    color: #F3976C!important;
-}
-
-.btn-atomic-tangerine {
-    background: #F3976C;
     color: #FFFFFF!important;
 }
-
-.btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
+.tc-grey {
+    color: #303030!important;
 }
 
 .ltc-white {
@@ -822,7 +841,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -1039,4 +1058,7 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+*:focus{
+    border: black solid 3px;
 }
