@@ -91,7 +91,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("img/texture-paper.jpg");
     background-size: 280px 280px;
     opacity: 0.5;
 }
@@ -747,7 +747,7 @@ h5{
 }
 h6{
     font-size: 20px;
-    padding-top: 40px;
+    padding-top: 10px;
     color: #000000 !important;
 }
 
@@ -802,6 +802,7 @@ h6{
 
 .tc-white {
     color: #FFFFFF!important;
+    z-index: 10;
 }
 .tc-grey {
     color: #303030!important;
@@ -842,6 +843,9 @@ h6{
 
 .bg-presentation {
     background-image: url("img/image-de-presentation.jpg");
+}
+.logo-simple{
+    border-radius: 125px;
 }
 
 @media (max-width: 1024px) {
