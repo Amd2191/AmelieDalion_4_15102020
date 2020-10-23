@@ -12,12 +12,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="./css/et-line.css">
-    <script async src="./js/jquery-2.1.0.js" cache-control:public max-age=31536000></script>
-    <script async src="./js/bootstrap.js"></script>
-    <script async src="./js/blocs.js"></script>
-    <script async src="./js/jquery.touchSwipe.js" defer></script>
-	<script async src="./js/gmaps.js"></script>
-	<cache-control></cache-control>
+
     <title>Contactez-nous: la chouette agence, webdesign à Lyon</title><!-- Analytics -->
     <!-- Analytics END -->
 </head>
@@ -46,7 +41,7 @@
             </div>
         </div><!-- bloc-0 END -->
         <!-- bloc-6 -->
-        <div class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
+        <div class="bloc bg-repeat bgc-atomic-tangerine d-bloc" id="bloc-6">
             <div class="container bloc-lg">
                 <div class="row">
                     <div class="col-sm-12">
@@ -65,14 +60,13 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <h2>Formulaire de contact</h2>
-                        <form id="form_1" novalidate success-msg="Votre message a bien été envoyé"
-                            fail-msg="Nous sommes désolé mais une erreur s'est produite pendant l'envoi de votre message.">
+                        <form id="form_1">
                             <div class="form-group"><label aria-label="Saisissez votre nom">Nom</label> <input id="name"
                                     class="form-control" required aria-label="Saisissez votre adresse mail"></div>
                             <div class="form-group"><label>Adresse email</label> <input id="email" class="form-control"
                                     type="email" required aria-label="Comment nous avez-vous connu?"></div>
                             <div class="form-group"><label>Comment nous avez-vous connu ?</label> <input
-                                    class="form-control" type="textarea" required id="input_504"
+                                    class="form-control" type="text" required id="input_504"
                                     aria-label="Décrivez avec autant de détails que vous le voulez votre projet"></div>
                             <div class="form-group"><label>Brief de votre projet (Ajoutez autant de détails que
                                     nécessaire)<br></label><textarea id="message" class="form-control" rows="4"
@@ -125,6 +119,11 @@
             </div>
         </div><!-- Footer - bloc-8 END -->
     </div><!-- Principal conteneur END -->
+    <script src="./js/jquery-2.1.0.js"></script>
+    <script async src="./js/bootstrap.js"></script>
+    <script async src="./js/blocs.js"></script>
+    <script  src="./js/jquery.touchSwipe.js" defer></script>
+	<script async src="./js/gmaps.js"></script>
 </body>
 
 </html>
