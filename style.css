@@ -476,7 +476,7 @@ button {
 }
 
 .icon-md {
-    font-size: 30px!important;
+    font-size: 50px!important;
 }
 
 .icon-lg {
@@ -657,7 +657,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #000000!important;
 }
 
 .container {
@@ -796,7 +796,7 @@ h6{
 }
 .bgc-atomic-tangerine {
     background-color: #F3976c;
-    color: #303030!important;
+    color: #000000!important;
 }
 
 .tc-white {
